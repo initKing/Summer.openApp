@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/font-icons.css">
+		<link rel="stylesheet" href="../css/iuapmobile.um.css">
+		<script src="../js/summer.js" ></script>
+		<script src="../js/jquery.min.js" ></script>
+		<script src="../js/Frameworks/iuapmobile.frameworks.ui.js" ></script>
+		<script src="../js/main.js" ></script>
+		<style>
+			.tc {
+				padding: 20px;
+				text-align:center;
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="um-frame" id="main">
+			<div id="content" class="um-content">
+					<h3>测试从web页面打开summer App</h3>
+			<p>需要创建一个summer 工程, 在config.xml文件中配置  urlScheme curApp urlScheme </p>
+			 <urlScheme>curapp</urlScheme> 
+			 <androidScheme> curapp </androidScheme> 
+			
+			<div class="tc">
+				<a href="curapp://evaluateJavaScript?parameters=%7B%22function%22:%22thirdWebOpenCurApp()%22,%22winId%22:%22root%22,%22parameters%22:%7B%22项目名称%22:%22台湾华新丽华%22%7D%7D%0A">打开aaa App</a>
+			</div>
+			</div>
+		</div>
+	</body>	
+</html>
