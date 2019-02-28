@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/iuapmobile.um.css">
+		<link rel="stylesheet" href="../css/font-icons.css">
+		<link rel="stylesheet" href="../css/msg.css">
+		<script src="../js/summer.js" ></script>
+		<script src="../js/jquery.min.js" ></script>
+		<script src="../js/Frameworks/iuapmobile.frameworks.ui.js" ></script>
+		<script src="../js/msg.js" ></script>
+	</head>
+	<body>
+		<div class="um-frame" id="index">
+			<div class="um-content">
+				<p>打开第三方应用</p>
+				<div class="p15">
+					<button class="btn" onclick="openApp('weixin://dl/moments','com.tencent.mm')">
+						click打开【weixin://dl/moments】
+					</button>
+				</div>
+				<div class="p15">
+					<button class="btn" onclick="openApp('http://','com.android.browser')">
+						click打开【com.android.browser】
+					</button>
+				</div>
+				<div class="p15">
+					<button class="btn" onclick="openApp('mqq://','com.tencent.mobileqq')">
+						click打开【mqq://】     【com.tencent.mobileqq】
+					</button>
+				</div>
+				<div class="p15">
+					<button class="btn" onclick="openApp('autonavi://','com.autonavi.minimap')">
+						click打开【autonavi://】【高德地图com.autonavi.minimap】
+					</button>
+				</div>
+				<div class="p15">
+					<button class="btn" onclick="openApp('testapp://evaluateJavaScript','com.yonyou.test1')">
+						click打开【testapp://】【方式1 openApp test1 App】
+					</button>
+				</div>
+				<div class="p15">
+					<button class="btn" onclick="openAppaa()">
+						click打开【testapp://】【方式2 web test1 App】
+					</button>
+				</div>
+				
+				<div class="p15">
+					<p>web 方式打开summer App</p>
+					<a href="testapp://evaluateJavaScript?parameters=%7B%22function%22:%22open()%22,%22winId%22:%22root%22,%22parameters%22:%7B%22aa%22:%22vv%22%7D%7D%0A">打开testapp</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

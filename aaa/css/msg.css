@@ -1,0 +1,29 @@
+.msg-info {
+	position: relative;
+}
+.msg-info .um-badge {
+	position: absolute;
+	right: -10px;
+	font-size: 12px;
+	top: 6px;
+}
+.msg-header {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background: blue;
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+}
+.um-listview-row:active {
+	background-color: #eee;/*����б��и��м���״̬�µı���ɫ*/
+}
+.mint-cell-value {
+	width: 100%;
+	line-height: 1.5;
+}
+.mint-cell-wrapper {
+	padding: 0;
+	background-image: none;
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gateway>
+
+	<service id="ncLoginService" provider="nclocator" method="umLogin"
+		returntype="uap.vo.umobile.UMResult">
+		<properties>
+			<params>context:uap.vo.umobile.UMContext</params>
+			<interface>uap.itf.umoblie.IUapMoblieServ</interface>
+			<security>false</security>
+		</properties>
+		<ds-set>
+			<datasource name="nc63" />
+		</ds-set>
+	</service>
+	
+	<service id="getDeviceStatusService" provider="http" method="post"
+		returntype="String">
+		<properties>
+		</properties>
+		<ds-set>
+			<datasource name="emm_url" />
+		</ds-set>
+	</service>
+	
+	<!-- 配置接口信息 查询 -->
+	<service id="mt01id" provider="nclocator" method="doQueryUser"
+		returntype="String">
+		<properties>
+			<params>userName:String|pwd:String|jsonParam:String</params>
+			<interface>nc.itf.moutai.mt01.IQueryUser</interface>
+			<security>false</security>
+		</properties>
+		<ds-set>
+			<datasource name="NC65" />
+		</ds-set>
+	</service>
+	
+	<!-- 配置接口信息  提交-->
+	<service id="mt02id" provider="nclocator" method="doQueryUser"
+		returntype="String">
+		<properties>
+			<params>userName:String|pwd:String|jsonParam:String</params>
+			<interface>nc.itf.moutai.mt01.IQueryUser</interface>
+			<security>false</security>
+		</properties>
+		<ds-set>
+			<datasource name="NC65" />
+		</ds-set>
+	</service>
+	
+	<!-- 配置接口信息 -->
+	<service id="mt03id" provider="nclocator" method="doQueryUser"
+		returntype="String">
+		<properties>
+			<params>userName:String|pwd:String|jsonParam:String</params>
+			<interface>nc.itf.moutai.mt01.IQueryUser</interface>
+			<security>false</security>
+		</properties>
+		<ds-set>
+			<datasource name="NC65" />
+		</ds-set>
+	</service>
+	
+	
+</gateway>

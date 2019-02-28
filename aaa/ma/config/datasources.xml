@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dsset>
+	<!-- 测试NC服务器地址 -->
+	<datasource id="NC65">
+		<url>http://192.168.101.89:8080</url>
+		<ncds>design</ncds>
+	</datasource>	
+	
+	<!-- 正式NC服务器地址 -->
+	<datasource id="NC63">
+		<url>http://123.108.101.89:8080</url>
+		<ncds>design</ncds>
+	</datasource>	
+	
+</dsset>
