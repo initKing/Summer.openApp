@@ -1,7 +1,8 @@
-﻿ //对于ios，打开第三方app还需要在当前app配置要打开的目标app的白名单，参见config.xml中的queriesSchemes配置
+﻿//对于ios，打开第三方app还需要在当前app配置要打开的目标app的白名单，参见config.xml中的queriesSchemes配置
 function openApp(urlScheme, pkgName){
 	alert('ios需要再config.xml中配置queriesSchemes')
 	summer.openApp({
+		"type":"scheme",  // 仅Android可用，对iOS无影响；增加后，唤起被调App后，可执行指定方法，并且可接收传递的参数
         "ios_appid" : urlScheme, //ios所需的参数，目标app的urlscheme，例如："weixin://" 
         						 //如果要打开summer App，需要配置evaluateJavaScript 
         						 // 例如：molischeme://evaluateJavaScript
@@ -12,7 +13,7 @@ function openApp(urlScheme, pkgName){
 		        "function":'open()',
 		        "winId":"root"
 	        }
-        }, //不支持
+        },
         "callback" : function(args){
         	//目前只有Android有callback
         	alert(JSON.stringify(args)); //android args is {"status":"打开成功","code":"1"}
